@@ -5,43 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; margin: 40px auto; max-width: 800px; color: #333; padding: 0 20px; }
-        h1 { color: #111; border-bottom: 2px solid #eaeaea; padding-bottom: 10px; }
-        h2 { color: #222; margin-top: 30px; }
-        ul { margin-bottom: 20px; }
-        li { margin-bottom: 10px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 { color: #1E293B; border-bottom: 2px solid #E2E8F0; padding-bottom: 10px; }
+        h2 { color: #334155; margin-top: 30px; }
+        p { margin-bottom: 15px; }
+        ul { margin-bottom: 15px; }
+        .last-updated { font-style: italic; color: #64748B; }
     </style>
 </head>
 <body>
+
     <h1>Privacy Policy</h1>
-    <p><strong>Last updated:</strong> September 13, 2026</p>
-    
-    <p>Thank you for choosing to be part of our community. This Privacy Policy describes how your information is collected, used, and shared when you use our application. <strong>We are committed to a local-first approach and do not use Firebase, analytics trackers, or telemetry frameworks.</strong></p>
-    
-    <h2>1. Information We Collect and How We Use It</h2>
-    <p>To provide our device optimization and cleaning services, our app requests specific permissions and accesses certain on-device data. <strong>All optimization processing occurs 100% locally on your device.</strong></p>
+    <p class="last-updated">Last Updated: September 2026</p>
+
+    <p>Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our application.</p>
+
+    <h2>1. Data Processing and Storage</h2>
+    <p>Our application is designed with a privacy-first approach. All core optimization, memory management, and file scanning features are performed <strong>locally on your device</strong>. We do not upload your personal files, photos, or usage statistics to external servers for processing.</p>
+
+    <h2>2. Permissions We Request</h2>
+    <p>To provide our optimization services, the app requires specific Android permissions. We only request permissions necessary for the app's functionality:</p>
     <ul>
-        <li><strong>Storage Access (Photos, Media, and Files):</strong> We request read and write access to your device's storage strictly to identify and remove junk files, cache, and duplicate files. We do not upload your personal files to any external servers.</li>
-        <li><strong>Installed Applications & Battery Usage:</strong> To provide the Battery Usage Monitor and Turbo RAM Engine features, we query the list of installed applications and use background hibernation techniques. We do not harvest, track, or transmit your list of installed apps or your app usage history.</li>
+        <li><strong>All Files Access (Manage External Storage):</strong> Required for the "Deep Storage & Duplicate Shredder" feature. This allows the app to scan your entire device storage to identify exact duplicate files by calculating secure MD5 byte hashes. <em>No files are moved, uploaded, or analyzed remotely. Files are only deleted upon your explicit confirmation.</em></li>
+        <li><strong>Usage Access (Package Usage Stats):</strong> Used to monitor battery usage and identify power-draining applications for hibernation.</li>
+        <li><strong>Kill Background Processes:</strong> Used by our Turbo RAM Engine and 24/7 Automated Background Guard to halt dormant tasks and prevent memory leaks.</li>
+        <li><strong>Internet & Network State:</strong> Used to verify Google Play subscriptions and to deliver advertisements in the Free version of the app.</li>
     </ul>
 
-    <h2>2. Third-Party Services</h2>
-    <p>Our app operates mostly offline, using only the following secure third-party services:</p>
-    <ul>
-        <li><strong>Google AdMob:</strong> We use AdMob to display advertisements in the free version of the app. AdMob may collect and use your device's advertising ID and general location data to serve personalized ads. <em>When you upgrade to Pro, this service is completely deactivated.</em></li>
-        <li><strong>Google Play Billing:</strong> For our Pro Subscriptions, payment processing is handled securely by Google Play. We do not collect, process, or store your credit card or payment details. Subscription pricing and offers are loaded dynamically through Google Play.</li>
-    </ul>
+    <h2>3. Advertisements & Pro Version</h2>
+    <p>The Free version of our app is ad-supported. Advertising partners may collect non-identifiable device data to serve relevant ads. Users who upgrade to the Pro Subscription enjoy an <strong>Ads-Free Experience</strong>, meaning no ad networks will be loaded and no ad-tracking data will be collected.</p>
 
-    <h2>3. Data Retention and Security</h2>
-    <p>Because the core functions of this app occur locally on your device, we do not store your personal files, device metrics, or usage behavior on our servers. Any data collected by third-party services (like AdMob) is subject to their respective retention policies.</p>
+    <h2>4. Changes to This Policy</h2>
+    <p>We may update our Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date on this page.</p>
 
-    <h2>4. Children's Privacy</h2>
-    <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
-
-    <h2>5. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes.</p>
-
-    <h2>6. Contact Us</h2>
-    <p>If you have any questions or suggestions about our Privacy Policy, please contact us at the support email provided on our Google Play Store listing.</p>
 </body>
 </html>
